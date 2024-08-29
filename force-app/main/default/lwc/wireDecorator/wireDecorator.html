@@ -1,4 +1,5 @@
 <template>
+  <template if:true={record.data}><!-- for using it in record.data.fields.Name.value -->
   <div class="slds-grid">
     <div class="slds-col slds-size_1-of-2">
         <lightning-formatted-text value={name} class="slds-text-heading_large">
@@ -11,4 +12,5 @@
         </lightning-formatted-text>
     </div>
   </div>  
+</template><!-- for using it in record.data.fields.Name.value -->
 </template>
