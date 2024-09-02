@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="dataBinderUsingFunction" icon-name="custom:custom14">
+        <ul>
+            <template if:true={record.data}>
+                <lightning-formatted-text value={name1}></lightning-formatted-text>
+            </template>
+            <template for:each={myFunctionContact} for:item ="myDataBinder">
+                <li key= {myDataBinder.Id}>
+                    {myDataBinder.Name}
+                </li>
+            </template>
+            <template if:true={error}>
+
+
+            </template>
+        </ul>
+    </lightning-card>
+
+</template>
